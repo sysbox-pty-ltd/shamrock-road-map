@@ -1,0 +1,71 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+body { background: #fff; }
+
+/* optional Container STYLES */
+.chart { height: 800px; margin: 5px; width: calc(100vw - 20px); }
+.Treant > .node {  }
+.Treant > p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.node-name {
+   font-weight: normal;
+}
+
+.node {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 0px solid #086623;
+    font-family: Tahoma;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 100px;
+    padding: 2px;
+    margin: 0px 0px 15px 0px;
+    color: #000;
+}
+
+.node img {
+    height: 18px;
+    width: 18px;
+    background: #4fa267;
+    /*background: url(./check.png) no-repeat;*/
+    padding: 2px;
+    border: 1px solid #4fa267 !important;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    float: none !important;
+}
+
+/*WIP styles*/
+.node.wip img {
+    border: 1px dashed #4fa267 !important;
+}
+
+/*Future styles*/
+.node.future .node-name {
+    opacity: 70%;
+}
+
+.node.future img {
+    opacity: 30%;
+    border: 1px solid #4fa267 !important;
+}
+
+/*Increments*/
+.node.i3 img {
+    border: 1px dashed #072227 !important;
+}
